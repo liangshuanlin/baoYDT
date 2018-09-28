@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <style type="text/css">
+		body{
+            font-size: 0;
+            background:#f2f2f2;
+        }
+        header.aui-bar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        .aui-btn.aui-pull-left .leftImg{
+            width: 25px;
+            height: 21px;
+            margin-top: 0;
+        }
+        .aui-btn.aui-pull-right .rightImg{
+            width: 20px;
+            height: 20px;
+		}
+		/* 内容区域，轮播图 */
+		.ydt-content{
+            box-sizing: border-box;
+            width: 100%;
+            margin: 55px auto 15px; 
+		}
+		.ydt-container1 img{
+			width: 100%;
+			height: 157px;
+		}
+		.swiper-pagination-bullet{
+			width: 15px;
+			height: 4px;
+			border-radius: 40%;
+			background: white;
+			opacity: 1;
+		}
+		.swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: rgb(134,157,252);
+        }
+		/* 车辆违章，驾驶积分.... */
+		.aui-row img{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+		}
+		.aui-grid .aui-grid-label{
+			font-size: 12px;
+		}
+		.aui-grid [class*=aui-col-]{
+            padding: 15px 0;
+        }
+		/* 模块样式的设置 */
+		.ydt-model{
+			width: calc(100% - 6px);
+			margin: 10px auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header class="aui-bar aui-bar-nav aui-bar-light">
+			<a class="aui-pull-left aui-btn">
+				<img class="leftImg" src="../image/icon_weather.png" alt="">
+			</a>
+			<div class="aui-title t-22">一点通</div>
+			<a class="aui-pull-right aui-btn">
+				<img class="rightImg" src="../image/icon_setting.png" alt="">
+			</a>
+		</header>
+		 <!-- 内容 -->
+		<div class="ydt-content">
+			<!-- 轮播 -->
+			<div class="swiper-container ydt-container1">
+				<div class="swiper-wrapper">
+					<img class="swiper-slide" src="../image/index_banner.png" alt="">
+					<img class="swiper-slide" src="../image/banner_01.png" alt="">
+					<img class="swiper-slide" src="../image/banner_02.png" alt="">
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- 景区，美食，酒店，附近 -->
+			<section class="aui-grid">
+				<div class="aui-row">
+					<div class="aui-col-xs-3">
+						<img src="../image/icon_cheliang.png" alt="">
+						<div class="aui-grid-label t-44">车辆违章</div>
+					</div>
+					<div class="aui-col-xs-3">
+						<img src="../image/icon_jiashi.png" alt="">
+						<div class="aui-grid-label t-44">驾驶积分</div>
+					</div>
+					<div class="aui-col-xs-3">
+						<img src="../image/icon_gongjijin.png" alt="">
+						<div class="aui-grid-label t-44">公积金</div>
+					</div>
+					<div class="aui-col-xs-3">
+						<img src="../image/icon_shebao.png" alt="">
+						<div class="aui-grid-label t-44">社保</div>
+					</div>
+					<div class="aui-col-xs-3">
+						<img src="../image/icon_gongjiao.png" alt="">
+						<div class="aui-grid-label t-44">公交查询</div>
+					</div>
+					<div class="aui-col-xs-3">
+						<img src="../image/icon_zixingche.png" alt="">
+						<div class="aui-grid-label t-44">公共自行车</div>
+					</div>
+					<div class="aui-col-xs-3">
+						<img src="../image/icon_gongxiang.png" alt="">
+						<div class="aui-grid-label t-44">共享单车</div>
+					</div>
+					<div class="aui-col-xs-3">
+						<img src="../image/icon_guahao.png" alt="">
+						<div class="aui-grid-label t-44">挂号</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- 其他模块:我要帮助， 我要旅游，随手拍，常用-->
+		<!-- 我要帮助 -->
+		<div class="ydt-model">
+			<div class="ydt-title">我要帮助</div>
+			<div class="aui-row">
+				
+			</div>
+			<div class="ydt-more">更多服务</div>
+		</div>
+
+	</div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript" src="../script/swiper.min.js"></script>
+<script type="text/javascript">
+    apiready = function(){
+		var ver = api.version;
+		var sType = api.systemType;
+		var sVer = api.systemVersion;
+		var id = api.deviceId;
+		var model = api.deviceModel;
+		var name = api.deviceName;
+		var cType = api.connectionType;
+		var winName = api.winName;
+		var winWidth = api.winWidth;
+		var winHeight = api.winHeight;
+		var frameName = api.frameName || '';
+		var frameWidth = api.frameWidth || '';
+		var frameHeight = api.frameHeight || '';
+
+		var str = '<ul>';
+		str += '<li>引擎版本信息: ' + ver + '</li>';
+		str += '<li>系统类型: ' + sType + '</li>';
+		str += '<li>系统版本: ' + sVer + '</li>';
+		str += '<li>设备标识: ' + id + '</li>';
+		str += '<li>设备型号: ' + model + '</li>';
+		str += '<li>设备名称: ' + name + '</li>';
+		str += '<li>网络状态: ' + cType + '</li>';
+		str += '<li>主窗口名字: ' + winName + '</li>';
+		str += '<li>主窗口宽度: ' + winWidth + '</li>';
+		str += '<li>主窗口高度: ' + winHeight + '</li>';
+		str += '<li>子窗口名字: ' + frameName + '</li>';
+		str += '<li>子窗口宽度: ' + frameWidth + '</li>';
+		str += '<li>子窗口高度: ' + frameHeight + '</li>';
+		str += '</ul>';
+
+		$api.byId('sys-info').innerHTML = str;
+
+	};
+	var swiper1 = new Swiper('.ydt-container1', {
+        speed: 800,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+    });
+</script>
+</html>

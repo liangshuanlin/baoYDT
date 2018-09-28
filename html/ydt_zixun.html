@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>资讯</title>
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <style type="text/css">
+        .aui-btn.aui-pull-left .leftImg{
+            width: 25px;
+            height: 21px;
+            margin-top: 0;
+        }
+        .aui-btn.aui-pull-right .rightImg{
+            width: 20px;
+            height: 20px;
+        }
+        .ydt-bar{
+            clear: both;
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: space-around;
+            font-size: 16px;
+            line-height: 30px;
+        }
+        .ydt-active{
+            border-bottom: 3px solid #5277DA;
+        }
+        .ydt-content{
+            box-sizing: border-box;
+            margin: 10px auto; 
+            border-radius: 7.5px;
+            overflow: hidden;
+        }
+        .swiper-container{
+            height: 164px;
+        }
+
+        /* 分页器的相关设置 */
+        .swiper-container>.swiper-pagination{
+            bottom: 0px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: white;
+        }
+        .swiper-pagination-bullet{
+            opacity: 1;
+            background: transparent;
+            border: 1px solid white;
+        }
+        
+         .ydt-hot-search{
+             float: left; 
+             padding-bottom: 10px;
+             padding-top:0px;
+         }
+         .ydt-img-hot-search{
+             height: 22px;
+             width: 90px;
+         }
+         .ydt-question{
+             font-size:13px;
+             color: #999999;
+             float:right;
+         }
+         .clearfix{
+             clear: both;
+         }
+
+         .aui-list {
+           border-top:none !important;
+         }
+         .aui-list .aui-list-item {
+            border-bottom:  none !important;
+        }
+        .ydt-list-item-div{
+            padding-top:2px;
+            color: #555;
+            font-size: 0.7rem !important;
+        }
+        .ydt-list-item-lable{
+            color:#B1C2EE;
+            height:15px;
+            line-height:15px;
+            padding: 0.5rem !important;
+        }
+        .aui-list .aui-list-item{
+            min-height: 1.0rem !important;
+        }
+         .ydt-label-blue {
+          color: #5277DA;
+          border-color: #5277DA;
+        }
+        .ydt-list-item-media{
+            width: 75px;
+            height: 75px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="aui-bar aui-bar-nav aui-bar-light">
+            <a class="aui-pull-left aui-btn">
+                <img class="leftImg" src="../image/icon_weather.png" alt="">
+            </a>
+            <div class="aui-title t-22">资讯</div>
+            <a class="aui-pull-right aui-btn">
+                <img class="rightImg" src="../image/icon_search.png" alt="">
+            </a>
+            <div class="ydt-bar t-55">
+                <div class="ydt-item ydt-active">新闻</div>
+                <div class="ydt-item">生活</div>
+                <div class="ydt-item">政务</div>
+                <div class="ydt-item">政策</div>
+            </div>
+        </header>
+        
+        <div class="ydt-content">
+                <div class="aui-content-padded">
+                        <div class="clearfix" >
+                            <div class="ydt-hot-search"><img class="ydt-img-hot-search" src="../image/hot_search.png"></div>
+                            <div class="ydt-question">不感兴趣?</div>
+                        </div>
+                    </div>
+                    <div class="aui-margin-b-10 clearfix">
+                        <ul class="aui-list aui-padded-t-10 aui-padded-b-10">
+                            <li class="aui-list-item">
+                                <span class="ydt-list-item-div"><label class="ydt-list-item-lable">#</label>美称中国试图干预美国中期选举</span>
+                            </li>
+                            <li class="aui-list-item">
+                                <span class="ydt-list-item-div"><label class="ydt-list-item-lable">#</label>习近平在辽宁考察</span>
+                            </li>
+                            <li class="aui-list-item">
+                                <span class="ydt-list-item-div"><label class="ydt-list-item-lable">#</label>我初中毕业就高考差1分上清华</span>
+                            </li>
+                            <li class="aui-list-item">
+                                <span  class="ydt-list-item-div"><label class="ydt-list-item-lable">#</label>瑞典辱华节目负责人向上...</span>
+                            </li>
+                            <li class="aui-list-item">
+                                <span class="ydt-list-item-div"><label class="ydt-list-item-lable">#</label>你的游戏账号网银就丢了一般了</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                <ul class="aui-list aui-media-list">
+                        <li class="aui-list-item">
+                            <div class="aui-media-list-item-inner">
+                                <div class="aui-list-item-inner aui-padded-t-15">
+                                    <div class="aui-list-item-text">
+                                        <div class="aui-list-item-title aui-font-size-16">谁在用苹果手机？赶紧看，央视已报道</div>
+                                    </div>
+                                    <div class="aui-info aui-padded-b-0">
+                                        <div class="aui-info-item aui-font-size-12">
+                                        <span class="aui-label ydt-label-blue aui-label-outlined aui-margin-l-5">置顶</span>
+                                        </div>
+                                        <div class="aui-info-item aui-font-size-12">宝鸡新闻网</div>
+                                        <div class="aui-info-item aui-font-size-12">2小时前</div>
+                                        <div class="aui-info-item aui-font-size-12">1225</div>
+                                    </div>
+                                </div>
+                                <div class="aui-list-item-media aui-padded-t-15">
+                                    <img src="../image/zx_01.png" class="ydt-list-item-media">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="aui-list-item">
+                            <div class="aui-media-list-item-inner">
+                                <div class="aui-list-item-inner">
+                                    <div class="aui-list-item-text">
+                                        <div class="aui-list-item-title aui-font-size-16">网吧电脑看到它 你的游戏账号网银就丢了一般了</div>
+                                    </div>
+                                    <div class="aui-info aui-padded-b-0">
+                                        <div class="aui-info-item aui-font-size-12">
+                                            <span class="aui-label ydt-label-blue aui-label-outlined aui-margin-l-5">置顶</span>
+                                        </div>
+                                        <div class="aui-info-item aui-font-size-12">华商网</div>
+                                        <div class="aui-info-item aui-font-size-12">5小时前</div>
+                                        <div class="aui-info-item aui-font-size-12">1200</div>
+                                    </div>
+                                </div>
+                                <div class="aui-list-item-media">
+                                    <img src="../image/zx_01.png" class="ydt-list-item-media">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="aui-list-item">
+                            <div class="aui-media-list-item-inner">
+                                <div class="aui-list-item-inner">
+                                    <div class="aui-list-item-text">
+                                        <div class="aui-list-item-title aui-font-size-16">QQ音乐与酷狗酷我在一起了！三个品牌继续独立发展</div>
+                                    </div>
+                                    <div class="aui-info aui-padded-b-0">
+                                            <div class="aui-info-item aui-font-size-12">
+                                                    <span class="aui-label ydt-label-blue aui-label-outlined aui-margin-l-5">置顶</span>
+                                            </div>
+                                            <div class="aui-info-item aui-font-size-12">人民日报</div>
+                                            <div class="aui-info-item aui-font-size-12">一天前</div>
+                                            <div class="aui-info-item aui-font-size-12">1100</div>
+                                    </div>
+                                </div>
+                                <div class="aui-list-item-media">
+                                    <img src="../image/zx_01.png" class="ydt-list-item-media">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="aui-list-item">
+                            <div class="aui-media-list-item-inner">
+                                <div class="aui-list-item-inner">
+                                    <div class="aui-list-item-title aui-font-size-16">小米手机的质量到底有多差？</div>
+                                    <div class="aui-list-item-text">
+                                        <p class="aui-ellipsis-2">我买了小米手机五台，还有三台小米平板​第一台是跟前女友一起买的小米 2s，用了三年，到现在没出现卡顿，后来给妈妈买了一台红米1s，老妈到现在还在用着，我因为工作需要要用电信联通两张卡</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aui-info">
+                                <div class="aui-info-item aui-font-size-12">
+                                    <span class="aui-margin-l-5">宝鸡公安局</span>
+                                    <span class="aui-margin-l-5">2018.09.27</span>
+                                </div>
+                                <div class="aui-info-item aui-font-size-12">1156</div>
+                            </div>
+                        </li>
+                        <li class="aui-list-item">
+                            <div class="aui-media-list-item-inner">
+                                <div class="aui-list-item-inner">
+                                    <div class="aui-list-item-text">
+                                        <div class="aui-list-item-title aui-font-size-16">QQ音乐与酷狗酷我在一起了！三个品牌继续独立发展</div>
+                                    </div>
+                                    <div class="aui-info aui-padded-b-0">
+                                            <div class="aui-info-item aui-font-size-12">
+                                                    <span class="aui-margin-l-5">宝鸡公安局</span>
+                                                    <span class="aui-margin-l-5">2018.09.26</span>
+                                            </div>
+                                            <div class="aui-info-item aui-font-size-12">1100</div>
+                                    </div>
+                                </div>
+                                <div class="aui-list-item-media">
+                                    <img src="../image/zx_01.png" class="ydt-list-item-media">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div style="padding-top: 50px;">
+                            <footer class="aui-bar aui-bar-tab" id="footer">
+                                <div class="aui-bar-tab-item aui-active" tapmode>
+                                    <i class="aui-iconfont aui-icon-home"></i>
+                                    <div class="aui-bar-tab-label">一点通</div>
+                                </div>
+                                <div class="aui-bar-tab-item" tapmode>
+                                    <i class="aui-iconfont aui-icon-star"></i>
+                                    <div class="aui-bar-tab-label">政务</div>
+                                </div>
+                                <div class="aui-bar-tab-item" tapmode>
+                                    <i class="aui-iconfont aui-icon-cart"></i>
+                                    <div class="aui-bar-tab-label">咨询</div>
+                                </div>
+                                <div class="aui-bar-tab-item" tapmode>          
+                                    <i class="aui-iconfont aui-icon-my"></i>
+                                    <div class="aui-bar-tab-label">旅游</div>
+                                </div>
+                                <div class="aui-bar-tab-item" tapmode>
+                                    <i class="aui-iconfont aui-icon-my"></i>
+                                    <div class="aui-bar-tab-label">我的</div>
+                                </div>
+                            </footer>
+                        </div>
+
+
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript" src="../script/swiper.min.js"></script>
+<script type="text/javascript">
+    apiready = function(){
+        console.log('hahahahhahahha');
+    }
+    var swiper = new Swiper('.swiper-container', {
+        speed: 800,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+    });
+</script>
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>旅游</title>
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <style type="text/css">
+        body{
+            font-size: 0;
+            background:white;
+        }
+        header.aui-bar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        .aui-btn.aui-pull-left .leftImg{
+            width: 25px;
+            height: 21px;
+            margin-top: 0;
+        }
+        .aui-btn.aui-pull-right .rightImg{
+            width: 20px;
+            height: 20px;
+        }
+        .ydt-bar{
+            clear: both;
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: space-around;
+            font-size: 16px;
+            line-height: 30px;
+        }
+       
+        .ydt-content{
+            box-sizing: border-box;
+            width: calc(100% - 30px);
+            margin: 92px auto 15px; 
+            border-radius: 7.5px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px rgba(82, 119, 218, 0.2);
+        }
+        .ydt-container1.swiper-container{
+            height: 164px;
+        }
+        .swiper-container img{
+            height: 100%;
+        }
+
+        /* 分页器的相关设置 */
+        .swiper-container>.swiper-pagination{
+            bottom: 7px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: white;
+        }
+        .swiper-pagination-bullet{
+            opacity: 1;
+            background: transparent;
+            border: 1px solid white;
+        }
+        /* 景区，美食，酒店，附近样式设置 */
+        .aui-row img{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+        }
+        .aui-grid .aui-grid-label{
+			font-size: 12px;
+        }
+        .aui-grid [class*=aui-col-]{
+            padding: 15px 0;
+        }
+        /* 随手拍样式设置 */
+        .ydt-suishoupai{
+            width: 305px;
+            height: 61px;
+            margin: 30px auto;
+            background: url(../image/ssp_bg.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        /* 景点列表 */
+        .ydt-list{
+            padding-left: 15px;
+            margin-bottom: 50px;
+        }
+        .ydt-cell{
+            margin-bottom: 30px;
+        }
+        .ydt-title-1{
+            font-size: 15px;
+        }
+        .ydt-title-2{
+            font-size: 12px;
+            margin: 10px 0;
+        }
+        .ydt-container2 .swiper-slide{
+            width: 110px;
+            height: 90px;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="aui-bar aui-bar-nav aui-bar-light">
+            <a class="aui-pull-left aui-btn">
+                <img class="leftImg" src="../image/icon_weather.png" alt="">
+            </a>
+            <div class="aui-title t-22">旅游</div>
+            <a class="aui-pull-right aui-btn">
+                <img class="rightImg" src="../image/icon_search.png" alt="">
+            </a>
+            <div class="ydt-bar t-55">
+                <div class="ydt-item">市情</div>
+                <div class="ydt-item">文化</div>
+                <div class="ydt-item">经济</div>
+                <div class="ydt-item">公益</div>
+            </div>
+        </header>
+        <!-- 内容 -->
+        <div class="ydt-content">
+            <!-- 轮播 -->
+            <div class="swiper-container ydt-container1">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="../image/banner_01.png" alt="">
+                    <img class="swiper-slide" src="../image/banner_02.png" alt="">
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- 景区，美食，酒店，附近 -->
+            <section class="aui-grid">
+                <div class="aui-row">
+                    <div class="aui-col-xs-3">
+                        <img src="../image/icon_jingqu.png" alt="">
+                        <div class="aui-grid-label t-44">景区</div>
+                    </div>
+                    <div class="aui-col-xs-3">
+                        <img src="../image/icon_meishi.png" alt="">
+                        <div class="aui-grid-label t-44">美食</div>
+                    </div>
+                    <div class="aui-col-xs-3">
+                        <img src="../image/icon_jiudian.png" alt="">
+                        <div class="aui-grid-label t-44">酒店</div>
+                    </div>
+                    <div class="aui-col-xs-3">
+                        <img src="../image/icon_fujin.png" alt="">
+                        <div class="aui-grid-label t-44">附近</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- 随手拍 -->
+        <div class="ydt-suishoupai"></div>
+        <!-- 景点列表 -->
+        <ul class="ydt-list">
+            <li class="ydt-cell">
+                <div class="ydt-title-1 t-22">世纪荟萃智选假日酒店</div>
+                <div class="ydt-title-2 t-55">宝鸡金台区 金台大道23号（居然之家西侧）</div>
+                <div class="swiper-container ydt-container2">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" src="../image/ly_01.png" alt="">
+                        <img class="swiper-slide" src="../image/ly_02.png" alt="">
+                        <img class="swiper-slide" src="../image/ly_03.png" alt="">
+                        <img class="swiper-slide" src="../image/ly_04.png" alt="">
+                        <img class="swiper-slide" src="../image/ly_05.png" alt="">
+                        <img class="swiper-slide" src="../image/ly_06.png" alt="">
+                        <img class="swiper-slide" src="../image/ly_07.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li class="ydt-cell">
+                    <div class="ydt-title-1 t-22">世纪荟萃智选假日酒店</div>
+                    <div class="ydt-title-2 t-55">宝鸡金台区 金台大道23号（居然之家西侧）</div>
+                    <div class="swiper-container ydt-container2">
+                        <div class="swiper-wrapper">
+                            <img class="swiper-slide" src="../image/ly_01.png" alt="">
+                            <img class="swiper-slide" src="../image/ly_02.png" alt="">
+                            <img class="swiper-slide" src="../image/ly_03.png" alt="">
+                            <img class="swiper-slide" src="../image/ly_04.png" alt="">
+                            <img class="swiper-slide" src="../image/ly_05.png" alt="">
+                            <img class="swiper-slide" src="../image/ly_06.png" alt="">
+                            <img class="swiper-slide" src="../image/ly_07.png" alt="">
+                        </div>
+                    </div>
+                </li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript" src="../script/swiper.min.js"></script>
+<script type="text/javascript">
+    apiready = function(){
+        console.log('hahahahhahahha');
+    }
+    var swiper1 = new Swiper('.ydt-container1', {
+        speed: 800,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+    });
+
+    var swiper2 = new Swiper('.ydt-container2', {
+      slidesPerView: 'auto',
+      spaceBetween: 30
+    });
+</script>
+</html>

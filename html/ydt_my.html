@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <style>
+    	.headerBG{
+            background: url(../image/person_bg.png) no-repeat !important;
+            background-size: 100% 100% !important;
+        }
+        .aui-btn.aui-pull-left .leftImg{
+            width: 25px;
+            height: 21px;
+            margin-top: 18;
+        }
+        .aui-btn.aui-pull-right .rightImg{
+            width: 20px;
+            height: 20px;
+            margin-top: 16px;
+        }
+        
+        .ydt-my-ulLIst::after{
+            content: '';
+            display: block;
+            clear: both;
+           
+        }
+        .ydt-my-ulLIst{
+            background: white;
+            margin: 0 auto;
+            display: block;
+        }
+        .ydt-my-ulLIst li{
+            float:left;
+            padding-left: 20px !important;
+            background-color:white;
+            margin: 0 auto;
+            display: block;
+        }
+        .ydt-my-title{
+            color: #222222 !important;
+            font-size:0.9rem; 
+            padding-top: 12px;
+        }
+        .aui-bar-light .ydt-my-right{
+            color: #919191 !important;
+            font-size: 0.6rem;
+            margin-top: -22px;
+        }
+        .ydt-my-renzheng{
+            line-height: 22px;
+            margin-left: 155px;
+            margin-top: -8px;
+            border-radius: 10px;
+            background-color: #f1f1f1;
+            width: 79px;
+        }
+        .ydt-my-strong{
+            width: 80px;
+            margin-left: 155px;
+            margin-top: -8px;
+        }
+        .ytd-my-zhut-bg{
+            background-color: #f2f2f2;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .ydt-my-renzheng-div{
+            background-color: white;
+            margin-top: 10px;
+        }
+        .ydt-my-yuan{
+            border-radius: 10px;
+            border-top:0;
+            
+
+        }
+        .ydt-my-yuan li{
+            border-bottom: 1 !important;
+            border-bottom: #dfdfdf;
+        }
+        .ydt-my-denglu-zhuti{
+            margin-top:60px; 
+            padding-left:15px;
+            padding-right: 15px;
+            display:block;
+        }
+        .ydt-my-denglu{
+            background-color: white;
+            padding-left:15px;
+            padding-right:15px;
+            border-radius: 15px;
+            display: block;
+        }
+        .ydt-my-denglu-img{
+            border-radius:100%;
+            padding: 10px 10px 10px 10px; 
+            box-sizing: content-box;
+            margin-left: -10px;
+        }
+        .ydt-my-zhece{
+            margin-left: -84px;
+            margin-top: -77px; 
+            font-size: 0.6rem; 
+            color: #2222;
+        }
+        .ydt-my-centerDiv{
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-left: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 0 auto;
+            display: block;
+
+        }
+       .ydt-my-strong a{
+           color: #222222;
+       }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+         <!--登录注册开始-->
+        <header class="aui-bar aui-bar-nav aui-bar-light headerBG">
+            <a class="aui-pull-left aui-btn">
+               <img class="leftImg" src="../image/icon_weather_white.png" alt="">
+            </a>
+            <a class="aui-pull-right aui-btn">
+                <img class="rightImg" src="../image/icon_my_setting.png" alt="">
+            </a>
+            <div class="ydt-my-denglu-zhuti">
+                    <div class="ydt-my-denglu" >
+                       <img src="../image/head_poto.png" height="62px" width="62px" class="ydt-my-denglu-img" />
+                       <div class="ydt-my-zhece t-22">
+                           <div class="ydt-my-strong"><strong>
+                              <a class="ydt-my-a" href="#">登录</a> 
+                            / <a class="ydt-my-a" href="#">注册</a></strong>
+                            </div>
+                           <div class="ydt-my-renzheng">未实名认证</div>
+                       </div>
+                       <div class="ydt-my-centerDiv">
+                            <ul class="ydt-my-ulLIst">
+                                <li class="aui-list-item">
+                                    <div class="aui-list-item-inner">
+                                        <div class="aui-list-item-title ydt-my-title">0</div>
+                                        <div class="aui-list-item-right ydt-my-right" >我的咨询</div>
+                                    </div>
+                                </li>
+                                <li class="aui-list-item ">
+                                    <div class="aui-list-item-inner">
+                                        <div class="aui-list-item-title ydt-my-title">0</div>
+                                        <div class="aui-list-item-right ydt-my-right" >我的投诉</div>
+                                    </div>
+                                </li>
+                                <li class="aui-list-item">
+                                    <div class="aui-list-item-inner">
+                                        <div class="aui-list-item-title ydt-my-title" >0</div>
+                                        <div class="aui-list-item-right ydt-my-right" >我的收藏</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <!--登录注册结束-->
+        
+        <div class="ytd-my-zhut-bg">
+            <!--实名认证开始-->
+            <div class="ydt-my-renzheng-div">
+                <ul class="aui-list ydt-my-yuan">
+                    <li class="aui-list-item aui-list-item-arrow">
+                        <div class="aui-list-item-label-icon">
+                            <i class="aui-iconfont">
+                                <img src="../image/icon_renzheng.png" width="20px" height="24px" />
+                            </i>
+                        </div>
+                        <div class="aui-list-item-inner aui-font-size-12 t-40 ">实名认证</div>
+                    </li>
+                </ul>
+            </div>
+             <!--实名认证结束-->
+             <!--个人信息开始-->
+            <div class="ydt-my-renzheng-div">
+                <ul class="aui-list ydt-my-yuan">
+                    <li class="aui-list-item aui-list-item-arrow">
+                        <div class="aui-list-item-inner aui-font-size-15 t-40 ">个人信息</div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-arrow">
+                        <div class="aui-list-item-inner aui-font-size-15 t-40 ">我的收藏</div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-arrow">
+                        <div class="aui-list-item-inner aui-font-size-15 t-40 ">我的车辆</div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-arrow">
+                        <div class="aui-list-item-inner aui-font-size-15 t-40 ">我的随手拍</div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-arrow">
+                        <div class="aui-list-item-inner aui-font-size-15 t-40 ">我的问答</div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-arrow">
+                        <div class="aui-list-item-inner aui-font-size-15 t-40 ">系统设置</div>
+                    </li>
+                </ul>
+            </div>
+              <!--个人信息结束-->
+        </div>
+        
+    </div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+</html>
